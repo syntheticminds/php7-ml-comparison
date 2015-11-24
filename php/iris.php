@@ -65,7 +65,7 @@ class Benchmark
 }
 
 if (defined('HHVM_VERSION')) {
-    echo 'HHVM ' . substr(HHVM_VERSION, 0, strrpos(HHVM_VERSION, '.')) . PHP_EOL;
+    echo 'HHVM' . PHP_EOL;
 } else {
     echo 'PHP ' . PHP_MAJOR_VERSION . '.' . PHP_MINOR_VERSION . PHP_EOL;
 }

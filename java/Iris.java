@@ -2,7 +2,7 @@ import java.text.NumberFormat;
 
 public class Iris {
 	public static void main(String[] args) {
-		System.out.println("Java " + System.getProperty("java.vm.name"));
+		System.out.println("Java");
 		
 		Benchmark benchmark = new Benchmark();
     	int total = benchmark.run();

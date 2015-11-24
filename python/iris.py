@@ -51,7 +51,10 @@ class Iris():
 
         return self.classes[closest_neighbour_index]
 
-print("Python " + str(sys.version_info.major) + "." + str(sys.version_info.minor))
+if 'PyPy' not in sys.version:
+    print("Python " + str(sys.version_info.major) + "." + str(sys.version_info.minor))
+else:
+    print("PyPy")
 
 benchmark = Iris()
 total = benchmark.run()
