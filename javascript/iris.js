@@ -9,7 +9,7 @@ function Benchmark()
 
         var index = 0;
         var total = 0;
-        var endTime = Date.now() + (30 * 1000);
+        var endTime = Date.now() + (2 * 1000);
 
         while (Date.now() < endTime) {
             if (index >= this.attributes.length) {
@@ -67,4 +67,4 @@ console.log('NodeJS ' + process.version);
 var benchmark = new Benchmark();
 var total = benchmark.run();
 
-console.log(total + ' instances classified in 30 seconds (' + (total / 30).toFixed(0) + ' per second)');
+console.log(String(total).replace(/(.)(?=(\d{3})+$)/g,'$1,') + ' instances classified in 30 seconds (' + (total / 30).toFixed(0) + ' per second)');
