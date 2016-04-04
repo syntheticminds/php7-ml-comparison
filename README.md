@@ -1,6 +1,6 @@
 # PHP 7 Machine Learning Comparison
 
-This repository holds the source code for the PHP, Python and Java benchmarks used in the blog post, [Is PHP now suitable for machine learning?](http://www.syntheticminds.co.uk/blog/is-php-now-suitable-for-machine-learning.html)
+This repository holds the source code for the PHP, Python, JavaScript and Java benchmarks used in the blog post, [Is PHP now suitable for machine learning?](http://www.syntheticminds.co.uk/blog/is-php-now-suitable-for-machine-learning.html)
 
 # Instructions
 
@@ -36,9 +36,4 @@ nodejs javascript/iris.js
 cd java
 javac Iris.java
 java Iris
-```
-
-To test all first compile Java example and the run:
-```
-./all.sh
 ```
