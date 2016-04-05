@@ -1,10 +1,10 @@
 # PHP 7 Machine Learning Comparison
 
-This repository holds the source code for the PHP, Python and Java benchmarks used in the blog post, [Is PHP now suitable for machine learning?](http://www.syntheticminds.co.uk/blog/is-php-now-suitable-for-machine-learning.html)
+This repository holds the source code for the PHP, Python, JavaScript and Java benchmarks used in the blog post, [Is PHP now suitable for machine learning?](http://www.syntheticminds.co.uk/blog/is-php-now-suitable-for-machine-learning.html)
 
 # Instructions
 
-In the blog post, the benchmarks were run on a single core [php7dev Vagrant box](https://github.com/rlerdorf/php7dev). If you'd like to do the same, you'll need to install [HHVM](https://github.com/facebook/hhvm/wiki/Prebuilt-Packages-on-Debian-8), [PyPy](https://packages.debian.org/sid/pypy) and the [default JDK](https://wiki.debian.org/Java#JDK).
+In the blog post, the benchmarks were run on a single core [php7dev Vagrant box](https://github.com/rlerdorf/php7dev). If you'd like to do the same, you'll need to install [HHVM](https://github.com/facebook/hhvm/wiki/Prebuilt-Packages-on-Debian-8), [PyPy](https://packages.debian.org/sid/pypy), [NodeJS](https://nodejs.org/en/download/package-manager/#debian-and-ubuntu-based-linux-distributions) and the [default JDK](https://wiki.debian.org/Java#JDK).
 
 From the location of this readme file, the following commands will run the benchmarks.
 
@@ -28,6 +28,9 @@ hhvm php/iris.php
 
 # PyPy
 pypy python/iris.py
+
+# JavaScript
+nodejs javascript/iris.js
 
 # Java
 cd java

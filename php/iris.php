@@ -11,14 +11,14 @@ class Benchmark
 
         $index = 0;
         $total = 0;
-        $start_time = microtime(true);
+        $end_time = microtime(true) + 30;
 
-        while (microtime(true) < $start_time + 30) {
+        while (microtime(true) < $end_time) {
             if ($index >= count($this->attributes)) {
                 $index = 0;
             }
 
-            $answer = $this->classify($index);
+            $this->classify($index);
 
             $index++;
             $total++;
@@ -42,8 +42,9 @@ class Benchmark
     {
         $closest_neighbour_index = null;
         $closest_neighbour_distance = INF;
+        $count = count($this->attributes);
 
-        for ($i = 0; $i < count($this->attributes); $i++) {
+        for ($i = 0; $i < $count; $i++) {
             if ($i == $index) {
                 continue;
             }
